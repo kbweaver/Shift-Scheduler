@@ -1,0 +1,4 @@
+<Files ~ "\.(inc|sql|ini)$">
+  order allow,deny
+  deny from all
+</Files>
