@@ -1,0 +1,214 @@
+body{
+    font-family:Sans-serif;
+}
+
+div#header {
+
+}
+
+div#header h1 {
+    float: left;
+}
+
+div#header p {
+    display: inline;
+    float: right;
+}
+
+div.subnav ul {
+    text-align: left; /* set to left, right or center */
+    margin: 1em 0 1em 0; /* set margins as desired */
+    font: bold 11px verdana, arial, sans-serif; /* set font as desired */
+    border-bottom: 1px solid silver; /* set border COLOR as desired */
+    list-style-type: none;
+    padding: 3px 10px 3px 10px; /* THIRD number must change with respect to padding-top (X) below */
+}
+
+div.subnav li {
+    display: inline;
+    padding: 0 10px;
+}
+
+div.main {
+    clear: both;
+}
+
+div#footer {
+    clear: both;
+    margin-top: 10px;
+    border-top: 1px solid silver;
+    text-align: center;
+}
+
+table.calendar {
+    border: none;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+table.calendar label {
+    white-space: nowrap;
+}
+
+.calendar th.time span {
+    display: none;
+}
+
+.calendar td {
+    width: 10%;
+    height: 50px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    font-size:0.9375em;
+    padding: 0 4px;
+}
+
+.calendar td.time {
+    width: 5%;
+    border: none;
+    text-align: right;
+    white-space:nowrap;
+    font-size:0.75em;
+}
+
+.calendar td.time span {
+    position: relative;
+    bottom: 25px;
+}
+
+.calendar td.time span.not_hour {
+    display: none;
+}
+
+.calendar td.closed {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: white;
+    background-color: #0070FF;
+}
+
+.calendar td.not_full {
+    border-color: yellow !important;
+    border-width: 5px !important;
+    border-style: outset !important;
+}
+
+.calendar td.cap0 {
+    border-top: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    color: white; 
+    background-color: #0070FF;
+}
+
+.calendar td.cap0alt {
+    border-top: 1px dashed black;
+    border-bottom: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    color: white; 
+    background-color: #0070FF;
+}
+
+.calendar td.cap2 {
+    color: black;
+    background-color: white;
+    border-top: 1px solid black;
+}
+.calendar td.cap2alt {
+    color: black;
+    background-color: white;
+    border-top: 1px dashed black;
+    border-bottom: 1px solid black;
+}
+
+.calendar td.cap3 {
+    color: black;
+    background-color: #E3E3E3;
+    border-top: 1px solid black;
+}
+.calendar td.cap3alt {
+    color: black;
+    background-color: #E3E3E3;
+    border-top: 1px dashed black;
+    border-bottom: 1px solid black;
+}
+
+.calendar td.cap4 {
+    color: black;
+    background-color: #BABABA;
+    border-top: 1px solid black;
+}
+.calendar td.cap4alt {
+    color: black;
+    background-color: #BABABA;
+    border-top: 1px dashed black;
+    border-bottom: 1px solid black;
+}
+
+.calendar .sub_req {
+    color: red;
+    font-size:1.25em;
+    font-weight:bold;
+}
+
+.calendar .sub_taken {
+    color: green;
+}
+
+.calendar .appt {
+    background-color: purple;
+}
+
+/* begin css tabs 
+ * CSS Tabs derived from design by Joshua Kaufman (http://unraveled.com/projects/html/css_tabs/),
+ * licensed under Creative Commons Attribution 2.5 (http://creativecommons.org/licenses/by/2.5/).
+ */
+
+ul#tabnav { /* general settings */
+    text-align: left; /* set to left, right or center */
+    margin: 1em 0 1em 0; /* set margins as desired */
+    font: bold 11px verdana, arial, sans-serif; /* set font as desired */
+    border-bottom: 1px solid silver; /* set border COLOR as desired */
+    list-style-type: none;
+    padding: 3px 10px 3px 10px; /* THIRD number must change with respect to padding-top (X) below */
+}
+
+ul#tabnav li { /* do not change */
+    display: inline;
+}
+
+div#home li.home,
+div#schedule li.schedule,
+div#subs li.subs,
+div#admin li.admin { /* settings for selected tab */
+    border-bottom: 1px solid white; /* set border color to page background color */
+    background-color: white; /* set background color to match above border color */
+}
+
+div#home li.home a,
+div#schedule li.schedule a,
+div#subs li.subs a,
+div#admin li.admin a { /* settings for selected tab link */
+    background-color: white; /* set selected tab background color as desired */
+    color: black; /* set selected tab link color as desired */
+    position: relative;
+    top: 1px;
+    padding-top: 4px; /* must change with respect to padding (X) above and below */
+}
+
+ul#tabnav li a { /* settings for all tab links */
+    padding: 3px 4px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+    border: 1px solid silver; /* set border COLOR as desired; usually matches border color specified in #tabnav */
+    background-color: LightGrey; /* set unselected tab background color as desired */
+    color: black; /* set unselected tab link color as desired */
+    margin-right: 0px; /* set additional spacing between tabs as desired */
+    text-decoration: none;
+    border-bottom: none;
+}
+
+ul#tabnav a:hover { /* settings for hover effect */
+    background: white; /* set desired hover color */
+}
+
+/* end css tabs */
